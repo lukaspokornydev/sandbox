@@ -1,0 +1,66 @@
+<link href="{{"custom-collage.css" | asset_url }}" type="text/css" rel="stylesheet">
+<h1 class="customCollageTitle">{{section.settings.custom_collage_title}}</h1>
+
+
+<div class="customCollage">
+        {% for blocks in section.blocks %}
+    <div class="customBlock" style="grid-area:
+        {% case forloop.index %}
+            {% when 1 %} a
+            {% when 2 %} b
+            {% when 3 %} c
+            {% when 4 %} d
+            {% when 5 %} e
+            {% when 6 %} f
+            {% when 7 %} g
+            {% when 8 %} h
+            {% when 9 %} i
+            {% when 1 %} k
+            {% when 1 %} j
+            
+
+            {% endcase %}
+    ">
+        <img class="collageImage" src="{{blocks.settings.collage_image | img_url: 'large'}}">
+    </div>
+    
+        {% endfor %}
+</div>
+
+
+{% schema %}
+ {
+        "name": "Custom Collage",
+        "settings": [
+            {
+                "type": "text",
+                "id": "custom_collage_title",
+                "label": "custom collage title"
+            }
+        ],
+        "max_blocks": 13,
+        "blocks": [
+            {
+                "name": "collage image",
+                "type": "collage_image",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "collage image"
+                    },
+                    {
+                    "type": "image_picker",
+                    "id": "collage_image",
+                    "label": "collage_image"
+                }
+                ]
+            }
+            ],
+    "presets": [
+    {
+        "name": "Custom Collage"
+    }
+    ]
+ }
+{% endschema %}
