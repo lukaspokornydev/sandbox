@@ -1,211 +1,156 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "1650394310e2dc154e": {
+      "type": "custom-carousel",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "18f809cb-6328-4690-a570-9c42713b668b": {
+          "type": "quote",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "quote": "<p>Tady se mi libi, ale mam nejake vyhrady, ale nevim, ale ale ale. dfajdosifjoadjfaodi sjfapodjfaodifjaodfjapdosijfaodijfaodjfpadisjfaodjfapodjfapodijafopdjfap oijdfojdfoidjoaijfdoaidjsofajdofi<\/p>",
+            "author": "Jarek"
           }
         },
-        "text": {
-          "type": "text",
+        "0c89e43a-7dfd-4523-8899-6b676bdb120d": {
+          "type": "quote",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "18f809cb-6328-4690-a570-9c42713b668b",
+        "0c89e43a-7dfd-4523-8899-6b676bdb120d"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "title": "Testomonials Slider",
+        "product_count": 4,
+        "bg_color": false,
+        "bg_linear1": "#daf4f1",
+        "bg_linear2": "#11999e",
+        "text_details": "#ffffff",
+        "navi_color": "#56d4c5",
+        "autoplay": true,
+        "autorotate_speed": 3
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "1650275455090bfacd": {
+      "type": "custom-collage",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "987567c1-a437-477e-8c30-430900d5139b": {
+          "type": "collage_image",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-lde8WUNdTcc-unsplash.jpg"
           }
         },
-        "text": {
-          "type": "text",
+        "0422eefe-a3ec-49b8-8bed-36a7ff9a5d49": {
+          "type": "collage_image",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-7doibv0LlZM-unsplash.jpg"
+          }
+        },
+        "95c61f91-5aa2-4aff-9ad0-7a6ceae42236": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-WcwCGMETMaM-unsplash.jpg"
+          }
+        },
+        "d687638d-0949-4307-8059-fe154a6cdbed": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-VLRlwOutq9E-unsplash.jpg"
+          }
+        },
+        "bf761990-07ff-4e69-b5e4-28f87064521e": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-QW9FrzPj70U-unsplash.jpg"
+          }
+        },
+        "6e1f0156-8036-445c-8539-059745ca4e7a": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-AyBz3fcZjX4-unsplash.jpg"
+          }
+        },
+        "dcdfda5a-3acc-4d1d-a63a-62b05e8edfc7": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-VtLCTB6taLk-unsplash.jpg"
+          }
+        },
+        "ed1ad399-161f-476a-a1cb-3aa778942eb9": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/womens-fashion-woman-in-dress-in-vineyard.jpg"
+          }
+        },
+        "10a89c68-5f9e-418b-a334-145e918486ee": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg"
+          }
+        },
+        "8ccab392-f1e6-484e-958f-da954db422e0": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-h8JMGRdCZ5o-unsplash.jpg"
+          }
+        },
+        "5db4b932-43c3-479d-b943-644d01c6673f": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/fashion-model-in-urban-setting.jpg"
+          }
+        },
+        "f6a37c4a-ff50-44dd-9e90-0caeb9045736": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-wINYGcOk-Ps-unsplash.jpg"
+          }
+        },
+        "f34f549c-c06e-48c0-9ad8-dcef6cb77530": {
+          "type": "collage_image",
+          "settings": {
+            "title": "",
+            "collage_image": "shopify:\/\/shop_images\/mike-von-F4nn2XdyuiI-unsplash.jpg"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "987567c1-a437-477e-8c30-430900d5139b",
+        "0422eefe-a3ec-49b8-8bed-36a7ff9a5d49",
+        "95c61f91-5aa2-4aff-9ad0-7a6ceae42236",
+        "d687638d-0949-4307-8059-fe154a6cdbed",
+        "bf761990-07ff-4e69-b5e4-28f87064521e",
+        "6e1f0156-8036-445c-8539-059745ca4e7a",
+        "dcdfda5a-3acc-4d1d-a63a-62b05e8edfc7",
+        "ed1ad399-161f-476a-a1cb-3aa778942eb9",
+        "10a89c68-5f9e-418b-a334-145e918486ee",
+        "8ccab392-f1e6-484e-958f-da954db422e0",
+        "5db4b932-43c3-479d-b943-644d01c6673f",
+        "f6a37c4a-ff50-44dd-9e90-0caeb9045736",
+        "f34f549c-c06e-48c0-9ad8-dcef6cb77530"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_collage_title": "Lifestyle section"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "1650394310e2dc154e",
+    "1650275455090bfacd"
   ]
 }
