@@ -1,0 +1,35 @@
+ <div class="videoBannerContainer">
+<video autoplay muted loop playsinline none>
+<source src="{{section.settings.video_url}}" type="video/mp4">
+Your browser is not supported to play the video!
+</video>
+</div>
+<style>
+.videoBannerContainer {
+width: 100%;
+display: flex;
+overflow: hidden;
+}
+
+.videoBannerContainer > video {
+width: 100%;
+}
+</style>
+{% schema %}
+{
+"name": "Video Banner",
+"presets": [
+{
+"name": "Video Banner"
+}
+],
+"settings": [
+{
+"type": "text",
+"id": "video_url",
+"label": "Video Url",
+"info": "Paste the link from your file."
+}
+]
+}
+{% endschema %}

@@ -1,41 +1,8 @@
 {
   "sections": {
-    "1650394310e2dc154e": {
-      "type": "custom-carousel",
-      "blocks": {
-        "18f809cb-6328-4690-a570-9c42713b668b": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p>Tady se mi libi, ale mam nejake vyhrady, ale nevim, ale ale ale. dfajdosifjoadjfaodi sjfapodjfaodifjaodfjapdosijfaodijfaodjfpadisjfaodjfapodjfapodijafopdjfap oijdfojdfoidjoaijfdoaidjsofajdofi<\/p>",
-            "author": "Jarek"
-          }
-        },
-        "0c89e43a-7dfd-4523-8899-6b676bdb120d": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        }
-      },
-      "block_order": [
-        "18f809cb-6328-4690-a570-9c42713b668b",
-        "0c89e43a-7dfd-4523-8899-6b676bdb120d"
-      ],
-      "settings": {
-        "title": "Testomonials Slider",
-        "product_count": 4,
-        "bg_color": false,
-        "bg_linear1": "#daf4f1",
-        "bg_linear2": "#11999e",
-        "text_details": "#ffffff",
-        "navi_color": "#56d4c5",
-        "autoplay": true,
-        "autorotate_speed": 3
-      }
-    },
     "1650275455090bfacd": {
       "type": "custom-collage",
+      "disabled": true,
       "blocks": {
         "987567c1-a437-477e-8c30-430900d5139b": {
           "type": "collage_image",
@@ -150,7 +117,6 @@
     }
   },
   "order": [
-    "1650394310e2dc154e",
     "1650275455090bfacd"
   ]
 }
