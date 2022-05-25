@@ -1,0 +1,69 @@
+{% comment %} do product.template {% endcomment %}
+
+ {% for tag in product.tags %}
+  {% if tag contains 'affiliate'%}
+    {% assign isAffiliateProduct = true %}
+    {% assign affiliateLink = tag | split:'_' | last %}
+  {% endif %}
+{% endfor %}
+
+
+
+
+
+
+
+        {% unless isAffiliateProduct %}
+        <script>window.performance.mark('debut:product:title_visible');</script>
+
+          <div class="product__price">
+            {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+          </div>
+
+          {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+            <div class="product__policies rte" data-product-policies>
+              {%- if cart.taxes_included -%}
+                {{ 'products.product.include_taxes' | t }}
+              {%- endif -%}
+              {%- if shop.shipping_policy.body != blank -%}
+                {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+         
+
+          {% capture "form_classes" -%}
+            product-form product-form-{{ section.id }}
+            {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
+            {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+          {%- endcapture %}
+
+          {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+            {{ form | payment_terms }}
+
+            {% unless product.has_only_default_variant %}
+              <div class="product-form__controls-group">
+                {% for option in product.options_with_values %}
+                  <div class="selector-wrapper js product-form__item">
+                    <label for="SingleOptionSelector-{{ forloop.index0 }}">
+                      {{ option.name }}
+                    </label>
+                    <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input"
+                      id="SingleOptionSelector-{{ forloop.index0 }}"
+                      data-index="option{{ forloop.index }}"
+                    >
+                      {% for value in option.values %}
+                        <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endunless %}
+
+
+
+             {% if isAffiliateProduct %}
+                <a data-add-to-cart class="btn product-form__cart-submit" target='_blank' href='{{affiliateLink}}'>{{'customizations.affiliate_page.amazon_btn' | t}}</a>
+             {% endif %}
