@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+
+        .tech-slideshow {
+            height: 100px;
+            max-width: 50%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+            /* background-color: cadetblue; */
+        }
+
+        .mover-1 {
+            height: 150px;
+            width: 10000px;
+
+            position: absolute;
+            overflow-x: hidden;
+            top: 0;
+            left: 0;
+
+            animation: moveSlideshow 5s linear infinite;
+        }
+
+        .mover-1 img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+            height: 150px;
+            margin: 0;
+        }
+
+        .slower {
+            animation: moveSlideshow 10s linear infinite;
+
+        }
+
+        @keyframes moveSlideshow {
+            100% {
+                transform: translateX(-520px);
+            }
+        }
+
+
+
+        .raise:hover,
+        .raise:focus {
+            box-shadow: 1 6.5em 2.5em -0.4em var(--hover), 10px -10px var(--green);
+            transform: translateY(-0.25em) translatex(0.25em);
+
+        }
+
+
+        /* 
+&:hover, &:focus {
+    box-shadow: 
+    10px -10px var(--background), 10px -10px var(--green);
+      inset 6em 3.5em 0 0 var(--hover);
+  }
+} */
+
+
+
+
+        /* // Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties. */
+        button {
+            transition: 0.25s;
+            color: #fff;
+            font-weight: 800;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-variation-settings: 'slnt' -10;
+            font-style: oblique 10deg;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #f7e375 19.79%, #94ef66 100%);
+            color: black;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 36px;
+            line-height: 78px;
+            min-width: 258px;
+            padding: 0 22px;
+            position: relative;
+            -webkit-transition: all 0.1s ease-out;
+            transition: all 0.1s ease-out;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            white-space: nowrap;
+            -webkit-tap-highlight-color: transparent;
+
+        }
+
+        &:hover,
+        &:focus {
+            border-color: var(--hover);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="tech-slideshow">
+        <div class="mover-1">
+            <img src="img (1).png" style="height:150px;">
+            <img src="img (2).jpg">
+            <img src="img (3).jpg">
+            <img src="img (4).jpg">
+            <img src="img (5).jpg">
+            <img src="img (1).png" style="height:150px;">
+            <img src="img (2).jpg">
+            <img src="img (3).jpg">
+            <img src="img (4).jpg">
+            <img src="img (5).jpg">
+            <img src="img (1).png" style="height:150px;">
+            <img src="img (2).jpg">
+            <img src="img (3).jpg">
+            <img src="img (4).jpg">
+            <img src="img (5).jpg">
+        </div>
+    </div>
+    <div class="tech-slideshow">
+        <div class="mover-1 slower">
+            <img src="img (1).png" style="height:150px;">
+            <img src="img (2).jpg">
+            <img src="img (3).jpg">
+            <img src="img (4).jpg">
+            <img src="img (5).jpg">
+            <img src="img (1).png" style="height:150px;">
+            <img src="img (2).jpg">
+            <img src="img (3).jpg">
+            <img src="img (4).jpg">
+            <img src="img (5).jpg">
+            <img src="img (1).png" style="height:150px;">
+            <img src="img (2).jpg">
+            <img src="img (3).jpg">
+            <img src="img (4).jpg">
+            <img src="img (5).jpg">
+        </div>
+    </div>
+
+
+    <button class="raise">Read More</button>
+
+
+</body>
+
+</html>
